@@ -29,11 +29,3 @@ This verifies forward equivalence for the tested single-layer, unidirectional co
 PyTorch computes the candidate as tanh(input_projection + reset * hidden_projection), where hidden_projection includes its bias. Applying reset to the hidden state before its matrix multiplication is a different GRU variant and generally will not match nn.GRU.
 
 Reference: https://docs.pytorch.org/docs/stable/generated/torch.nn.GRU.html
-
-## Update the main README
-
-Remove the earlier sentence saying that extra credit was not performed. Add:
-
-> Extra credit: implemented a GRU cell gate by gate and verified its sequence outputs and final hidden states against PyTorch nn.GRU in 18 CPU float64 tests. All passed; the largest output difference was 3.331e-16. See [implementation and verification](extra_credit/README.md).
-
-Replace the old HW1_Report.pdf with the new report, retaining that filename so the existing README link still works. The earlier Report_editable.md predates extra credit; update or remove it to avoid presenting it as the current report.

@@ -1,0 +1,12 @@
+{
+  "run": "gpt_modern_seed1337",
+  "val_loss": 1.4607713136221696,
+  "val_tokens": 111360,
+  "val_bytes": 111360,
+  "reconstructed_total_nll_nats": 162671.4934849648,
+  "ppl_calculated": 4.309282054776157,
+  "ppl_logged": 4.309282054776157,
+  "bits_per_token": 2.107447530035561,
+  "bpb_calculated": 2.107447530035561,
+  "bpb_logged": 2.1074475300355604
+}

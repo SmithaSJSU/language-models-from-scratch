@@ -1,0 +1,7 @@
+text,layer,head,target,n,attention,previous_attention,uniform
+dialogue,0,0,previous_character,56,0.49777094,0.49777094,0.06480380740057774
+dialogue,2,0,word_start_distinct,28,0.23991954,0.10840342,0.05867371081641205
+prose,0,0,previous_character,55,0.5914866,0.5914866,0.06566307917787692
+prose,2,0,word_start_distinct,23,0.25212568,0.10495029,0.06222468480143951
+repetition,0,0,previous_character,46,0.65169865,0.65169865,0.07473834438545186
+repetition,2,0,word_start_distinct,12,0.18397708,0.0450668,0.07482633658724643

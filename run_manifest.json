@@ -1,0 +1,236 @@
+[
+  {
+    "run": "architecture/gpt_modern_seed1337",
+    "config": "configs/architecture/gpt_modern_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 193.67,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "architecture/gpt_modern_seed42",
+    "config": "configs/architecture/gpt_modern_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 169.08,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "architecture/gpt_textbook_seed1337",
+    "config": "configs/architecture/gpt_textbook_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 3438336,
+    "train_time_sec": 156.98,
+    "approx_flops_6ND": 338002182144000
+  },
+  {
+    "run": "architecture/gpt_textbook_seed42",
+    "config": "configs/architecture/gpt_textbook_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 3438336,
+    "train_time_sec": 157.06,
+    "approx_flops_6ND": 338002182144000
+  },
+  {
+    "run": "architecture/gru_seed1337",
+    "config": "configs/architecture/gru_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 806656,
+    "train_time_sec": 45.24,
+    "approx_flops_6ND": 79297511424000
+  },
+  {
+    "run": "architecture/gru_seed42",
+    "config": "configs/architecture/gru_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 806656,
+    "train_time_sec": 48.28,
+    "approx_flops_6ND": 79297511424000
+  },
+  {
+    "run": "architecture/lstm_512_seed1337",
+    "config": "configs/architecture/lstm_512_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 4236800,
+    "train_time_sec": 208.56,
+    "approx_flops_6ND": 416494387200000
+  },
+  {
+    "run": "architecture/lstm_512_seed42",
+    "config": "configs/architecture/lstm_512_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 4236800,
+    "train_time_sec": 208.45,
+    "approx_flops_6ND": 416494387200000
+  },
+  {
+    "run": "architecture/lstm_seed1337",
+    "config": "configs/architecture/lstm_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 61.16,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "architecture/lstm_seed42",
+    "config": "configs/architecture/lstm_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 61.3,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "architecture/rnn_seed1337",
+    "config": "configs/architecture/rnn_seed1337.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 280320,
+    "train_time_sec": 15.63,
+    "approx_flops_6ND": 27556577280000
+  },
+  {
+    "run": "architecture/rnn_seed42",
+    "config": "configs/architecture/rnn_seed42.yaml",
+    "commit": "cc64ca3ed3aa1ce7df3cf381c492bc7a9826b749",
+    "tokens_seen": 16384000,
+    "params": 280320,
+    "train_time_sec": 16.06,
+    "approx_flops_6ND": 27556577280000
+  },
+  {
+    "run": "context/gpt_modern_ctx128_seed1337",
+    "config": "configs/context/gpt_modern_ctx128_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 177.86,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/gpt_modern_ctx128_seed42",
+    "config": "configs/context/gpt_modern_ctx128_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 178.18,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/gpt_modern_ctx512_seed1337",
+    "config": "configs/context/gpt_modern_ctx512_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 190.03,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/gpt_modern_ctx512_seed42",
+    "config": "configs/context/gpt_modern_ctx512_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 193.47,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/gpt_modern_ctx64_seed1337",
+    "config": "configs/context/gpt_modern_ctx64_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 173.75,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/gpt_modern_ctx64_seed42",
+    "config": "configs/context/gpt_modern_ctx64_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 3162624,
+    "train_time_sec": 173.82,
+    "approx_flops_6ND": 310898589696000
+  },
+  {
+    "run": "context/lstm_ctx128_seed1337",
+    "config": "configs/context/lstm_ctx128_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 54.7,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "context/lstm_ctx128_seed42",
+    "config": "configs/context/lstm_ctx128_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 58.57,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "context/lstm_ctx512_seed1337",
+    "config": "configs/context/lstm_ctx512_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 85.07,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "context/lstm_ctx512_seed42",
+    "config": "configs/context/lstm_ctx512_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 85.3,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "context/lstm_ctx64_seed1337",
+    "config": "configs/context/lstm_ctx64_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 43.8,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "context/lstm_ctx64_seed42",
+    "config": "configs/context/lstm_ctx64_seed42.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 16384000,
+    "params": 1069824,
+    "train_time_sec": 46.06,
+    "approx_flops_6ND": 105167978496000
+  },
+  {
+    "run": "untrained/byte_zero_lr_seed1337",
+    "config": "configs/untrained/byte_zero_lr_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 1024,
+    "params": 115008,
+    "train_time_sec": 0.3,
+    "approx_flops_6ND": 706609152
+  },
+  {
+    "run": "untrained/char_zero_lr_seed1337",
+    "config": "configs/untrained/char_zero_lr_seed1337.yaml",
+    "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+    "tokens_seen": 1024,
+    "params": 102784,
+    "train_time_sec": 0.86,
+    "approx_flops_6ND": 631504896
+  }
+]

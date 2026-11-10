@@ -1,4 +1,62 @@
-# HW 1 - Language models from scratch
+# Language Models from Scratch: RNNs vs. Transformers
+
+How much do architecture, model size, and context length affect next-character prediction?
+
+This project compares six language-model configurations on Tiny Shakespeare using the same training-token budget and two random seeds. It also checks language-model metrics by hand and examines attention patterns in a trained Transformer.
+
+Completed for CMPE 258 - Deep Learning at San José State University.
+
+**Author:** Smitha Soman  
+**Environment:** Google Colab, NVIDIA Tesla T4, PyTorch  
+**Training budget:** 16,384,000 tokens per run  
+**Seeds:** 42 and 1337
+
+[Read the full report](HW1_Report.pdf)
+
+## Results
+
+Lower validation bits per byte (bpb) means better prediction. Values below are the mean and sample standard deviation across two seeds.
+
+| Model | Parameters | Validation bpb | Mean training time |
+|---|---:|---:|---:|
+| Modern Transformer | 3.163M | 2.1065 ± 0.0013 | 3.02 min |
+| LSTM-256 | 1.070M | 2.1389 ± 0.0034 | 1.02 min |
+| GRU | 0.807M | 2.1595 ± 0.0009 | 0.78 min |
+| LSTM-512 | 4.237M | 2.1754 ± 0.0100 | 3.48 min |
+| Textbook Transformer | 3.438M | 2.1837 ± 0.0059 | 2.62 min |
+| Vanilla RNN | 0.280M | 2.4392 ± 0.0041 | 0.26 min |
+
+![Validation learning curves across architectures](report_analysis/architecture_curves.png)
+
+## What I found
+
+- The modern Transformer achieved the lowest validation bpb. The smaller LSTM was the strongest recurrent model and trained about three times faster.
+- The larger LSTM fit the training data better but finished with worse validation performance. Its validation loss rose after reaching its best score midway through training, showing overfitting.
+- Both the LSTM and modern Transformer had their best mean scores at a context length of 512. Neither showed a clear stopping point within the tested range.
+- The Transformer performed better at every context length, but both models gained a similar amount from extending context from 64 to 512 characters.
+- Attention measurements identified a head that favored the previous character and another that favored the current word's first character.
+
+![Validation performance against context length](report_analysis/context.png)
+
+## Experiments
+
+1. **Metric checks:** Recomputed perplexity, bits/token, and bits/byte from saved validation metrics; compared untrained character and byte models against uniform predictions.
+2. **Architecture comparison:** Trained RNN, GRU, two LSTM sizes, and textbook and modern Transformers with equal token budgets.
+3. **Context length:** Compared LSTM and modern Transformer at 64, 128, 256, and 512 characters.
+4. **Attention analysis:** Measured attention patterns on dialogue, prose, and repetitive text. Word-start measurements excluded positions where word start was also the previous character.
+
+## Scope and limitations
+
+These results use one small dataset and two seeds. Learning rates and weight decay differ between recurrent and Transformer configurations, so the comparison evaluates those training recipes as well as architecture. The context study changes training and evaluation context together. Attention patterns describe observed preferences, not proof of a head's causal role.
+
+## Code attribution
+
+Training and model implementations come from the course's
+[nanolm tutorial and code](https://github.com/lkk688/DeepDataMiningLearning/tree/main/DeepDataMiningLearning/llm).
+
+This repository documents my experiment runs, configurations, results, and report, alongside scripts used to analyze the saved outputs. The underlying model implementations are credited to the upstream project.
+
+## Files and reproduction
 
 This package contains the experimental evidence for the accompanying report. It uses the nanolm implementation in [DeepDataMiningLearning](https://github.com/lkk688/DeepDataMiningLearning). Credit for the training implementation and tutorial belongs to that project; the analysis here summarizes the saved homework runs.
 
@@ -50,5 +108,3 @@ Repeat for the texts in attention/texts.json. Copy each generated image before t
 ## Interpretation and submission
 
 Lower bpb is better. Reported SD uses two seeds, not a confidence interval. Saved paired p-values are unadjusted and exploratory. Training recipes differ in learning rate and weight decay. Context experiments change both training and evaluation length, and validation token coverage varies slightly.
-
-Review the report, add your name/course details if required, and submit the single PDF to Canvas. Upload this extracted folder to Google Drive or GitHub and submit its accessible link separately. The report and this archive have not been published or submitted automatically.

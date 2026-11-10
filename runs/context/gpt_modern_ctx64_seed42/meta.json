@@ -1,0 +1,18 @@
+{
+ "name": "gpt_modern_ctx64",
+ "seed": 42,
+ "date": "2026-11-02T02:22:13",
+ "git": {
+  "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+  "branch": "main",
+  "dirty": false
+ },
+ "host": "9d63af2fbd59",
+ "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+ "python": "3.13.16",
+ "torch": "2.11.0+cu130",
+ "device": "cuda (precision=fp32, compile=yes)",
+ "world_size": 1,
+ "command": "/content/DeepDataMiningLearning/DeepDataMiningLearning/llm/nanolm/train.py -c /content/drive/MyDrive/HW1_Language_Models/configs/context/gpt_modern_ctx64_seed42.yaml",
+ "tags": []
+}

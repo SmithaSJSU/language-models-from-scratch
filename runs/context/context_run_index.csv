@@ -1,0 +1,17 @@
+model,context,seed,val_bpb,val_tokens,tokens_seen,train_time_sec,run_dir
+lstm,64,1337,2.187056524732403,111488,16384000,43.8,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx64_seed1337
+lstm,64,42,2.1828628041290266,111488,16384000,46.06,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx64_seed42
+lstm,128,1337,2.1613462190504666,111488,16384000,54.7,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx128_seed1337
+lstm,128,42,2.1607825168628914,111488,16384000,58.57,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx128_seed42
+lstm,256,1337,2.141248137509076,111360,16384000,61.16,/content/drive/MyDrive/HW1_Language_Models/runs/architecture/lstm_seed1337
+lstm,256,42,2.136501506699113,111360,16384000,61.3,/content/drive/MyDrive/HW1_Language_Models/runs/architecture/lstm_seed42
+lstm,512,1337,2.128071378997388,111104,16384000,85.07,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx512_seed1337
+lstm,512,42,2.127961972667213,111104,16384000,85.3,/content/drive/MyDrive/HW1_Language_Models/runs/context/lstm_ctx512_seed42
+gpt_modern,64,1337,2.149138946637734,111488,16384000,173.75,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx64_seed1337
+gpt_modern,64,42,2.1452375313674765,111488,16384000,173.82,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx64_seed42
+gpt_modern,128,1337,2.115259528928666,111488,16384000,177.86,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx128_seed1337
+gpt_modern,128,42,2.1048281320794993,111488,16384000,178.18,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx128_seed42
+gpt_modern,256,1337,2.1074475300355604,111360,16384000,193.67,/content/drive/MyDrive/HW1_Language_Models/runs/architecture/gpt_modern_seed1337
+gpt_modern,256,42,2.105550625988853,111360,16384000,169.08,/content/drive/MyDrive/HW1_Language_Models/runs/architecture/gpt_modern_seed42
+gpt_modern,512,1337,2.0965720590892314,111104,16384000,190.03,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx512_seed1337
+gpt_modern,512,42,2.0911060008757527,111104,16384000,193.47,/content/drive/MyDrive/HW1_Language_Models/runs/context/gpt_modern_ctx512_seed42

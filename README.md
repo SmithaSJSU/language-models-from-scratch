@@ -72,7 +72,9 @@ This package contains the experimental evidence for the accompanying report. It 
 - `run_manifest.json`, `version_check.txt`: provenance and compute accounting.
 - `Report_editable.md`: editable report text (HTML formatting within paragraphs).
 
-There are no model checkpoints or training datasets in this ZIP. Keep the existing Colab/Drive checkpoint if generating new samples or attention maps. Extra credit was not performed.
+There are no model checkpoints or training datasets in this ZIP. Keep the existing Colab/Drive checkpoint if generating new samples or attention maps. 
+
+> Extra credit: implemented a GRU cell gate by gate and verified its sequence outputs and final hidden states against PyTorch nn.GRU in 18 CPU float64 tests. All passed; the largest output difference was 3.331e-16. See [implementation and verification](extra_credit/README.md).
 
 ## Reproduce analysis without retraining
 

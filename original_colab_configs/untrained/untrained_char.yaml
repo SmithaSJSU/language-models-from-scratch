@@ -1,0 +1,22 @@
+defaults:
+- /content/DeepDataMiningLearning/DeepDataMiningLearning/llm/nanolm/configs/00_smoke.yaml
+name: untrained_char
+seed: 1337
+device: cuda
+precision: fp32
+run_dir: /content/drive/MyDrive/HW1_Language_Models/runs/untrained/char_zero_lr_seed1337
+data:
+  tokenizer: char
+train:
+  optimizer: adamw
+  max_steps: 1
+  max_time_sec: 0.0
+  lr: 0.0
+  embed_lr: 0.0
+  weight_decay: 0.0
+  warmup_steps: 0
+  compile: false
+  eval_every: 0
+eval:
+  final_eval_tokens: 0
+  sample_tokens: 0

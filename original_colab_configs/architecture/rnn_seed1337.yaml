@@ -1,0 +1,21 @@
+defaults:
+- /content/DeepDataMiningLearning/DeepDataMiningLearning/llm/nanolm/configs/02_char_transformer.yaml
+train:
+  max_steps: 2000
+  seq_len: 256
+  batch_size: 32
+  lr: 2e-3
+  weight_decay: 0.0
+  grad_accum: 1
+  max_time_sec: 0.0
+  compile: false
+  save_checkpoint: true
+model:
+  arch: rnn
+  n_layers: 2
+  dim: 256
+name: rnn
+seed: 1337
+device: cuda
+precision: fp32
+run_dir: /content/drive/MyDrive/HW1_Language_Models/runs/architecture/rnn_seed1337
